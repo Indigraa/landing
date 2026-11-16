@@ -6,3 +6,12 @@
 
 Enquiries from the form are emailed to Indigraa@gmail.com via Gmail SMTP (`app/api/contact/route.js`).
 On Vercel, add GMAIL_USER and GMAIL_APP_PASSWORD under Project Settings > Environment Variables.
+
+
+cd /home/ec2-user/landing
+npm install
+npm run build
+
+pm2 start npm --name "indigra-landing" -- start
+pm2 save
+pm2 startup
