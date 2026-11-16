@@ -2,7 +2,7 @@ import ContactForm from "../components/ContactForm";
 import Nav from "../components/Nav";
 import MarketTiles from "../components/MarketTiles";
 
-const P = "+91 96772 28886", MAIL = "enquire@indigraglobal.com";
+const P = "+91 96772 28886", MAIL = "indigraa@gmail.com";
 const img = (n) => `/img/${n}.jpg`;
 
 const headstones = [
