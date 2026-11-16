@@ -12,6 +12,12 @@ cd /home/ec2-user/landing
 npm install
 npm run build
 
-pm2 start npm --name "indigra-landing" -- start
+pm2 start npm --name "indigra-landing-v1" -- start
 pm2 save
 pm2 startup
+
+sudo env PATH=$PATH:/usr/bin /usr/lib/nodejs24/lib/node_modules/pm2/bin/pm2 startup systemd -u ec2-user --hp /home/ec2-user
+
+
+pm2 delete indigra-landing-v1
+pm2 flush
