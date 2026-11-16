@@ -1,13 +1,14 @@
 import ContactForm from "../components/ContactForm";
 import Nav from "../components/Nav";
+import MarketTiles from "../components/MarketTiles";
 
-const P = "+91 96772 28886", MAIL = "Indigraa@gmail.com";
+const P = "+91 96772 28886", MAIL = "enquire@indigraglobal.com";
 const img = (n) => `/img/${n}.jpg`;
 
 const headstones = [
-  ["design1", "Heart, Imperial Red"], ["design2", "Double heart, Imperial Red"], ["design3", "Triple heart, Imperial Red"], ["design4", "Oval with vase, Hassan Green"],
+  ["design1", "Heart, Imperial Red"], ["import1", "Curved top, imported colour"],["us10", "Grey headstone with two vases"],["design2", "Double heart, Imperial Red"], ["design3", "Triple heart, Imperial Red"], ["design4", "Oval with vase, Hassan Green"],
   ["design5", "Cross, Jet Black"], ["design6", "Heart with panel, Black and Red"], ["design7", "Temple style, Jet Black"], ["design8", "Cross with panel, Grey and Black"],
-  ["import1", "Curved top, imported colour"], ["import3", "Long curved top with vase, imported colour"],
+  , ["import3", "Long curved top with vase, imported colour"],
 ];
 const sculptures = [
   ["sculpt1", "Heart held by hands"], ["sculpt3", "Jesus medallion, Imperial Red"], ["sculpt5", "Resting angel"], ["sculpt6", "Kneeling angel, Red"],
@@ -18,12 +19,12 @@ const more = [
   ["slant1", "Slant markers", "Polished face, rough-cut sides"],
   ["stock3", "Stock dies and bases", "Ready serpentine and straight-top dies with bases"],
   ["vase1", "Vases", "Round, Regal and square taper, all polish"],
-  ["war1", "Very large specials", "50 ft war memorial in Jet Black, assembled in our shed"],
+  ["war2", "Very large specials", "50 ft war memorial in Jet Black, assembled in our shed"],
   ["mausoleum", "Mausoleums", "Gray and red granite, built to custom sizes"],
 ];
 const factory = [
-  ["factory1", "Factory entrance"], ["factory2", "EOT crane for heavy handling"], ["factory3", "Hand polishing to a mirror finish"],
-  ["factory4", "Container loading"], ["factory5", "Polished slabs in ready stock"], ["factory6", "Wooden crates for export"],
+  ["factory1", "Factory exterior"], ["factory2", "EOT crane for heavy handling"], ["factory3", "Hand polishing to a mirror finish"],
+  , ["factory5", "Polished slabs in ready stock"], ["factory6", "Wooden crates for export"],["factory4", "Container loading"]
 ];
 const quarry = ["quarry1", "quarry2", "quarry3", "quarry4", "quarry5"];
 
@@ -46,7 +47,7 @@ export default function Home() {
             <h1>Granite memorials, cut and polished at the source.</h1>
             <p>
               Headstones, sculptures, benches and monuments from a 100% export-oriented factory in Tada, 70 km
-              from Chennai Port. Thirty years of making, now with our own black granite quarry.
+              from Chennai Port. Twenty Six years of making, now with our own black granite quarry.
             </p>
             <div className="cta">
               <a className="btn" href="#contact">Request prices</a>
@@ -73,17 +74,19 @@ export default function Home() {
           </ul>
           <div className="strip">{quarry.map((q) => <img key={q} src={img(q)} alt="IG Black granite blocks at our quarry" loading="lazy" />)}</div>
         </section>
-
+        <MarketTiles />
         <section id="headstones" className="sec">
           <h2>Headstones</h2>
           <p className="lead">Hearts, crosses, temple styles and curved tops. Every design can be made in any colour below.</p>
-          <Grid items={headstones} cls="big" />
+          <Grid items={headstones.slice(0, 3)} cls="big" />
+          <p style={{ marginTop: "2rem" }}><a className="btn ghost dk" href="/markets/usa">See all headstones</a></p>
         </section>
 
         <section id="sculptures" className="sec stone">
           <h2>Sculpture designs</h2>
           <p className="lead">Hand-carved angels, cherubs, hands and floral work on polished granite.</p>
-          <Grid items={sculptures} cls="big" />
+          <Grid items={sculptures.slice(0, 3)} cls="big" />
+          <p style={{ marginTop: "2rem" }}><a className="btn ghost dk" href="/markets/usa">See all sculptures</a></p>
         </section>
 
         <section id="range" className="sec">
@@ -127,7 +130,7 @@ export default function Home() {
               <dt>Shipping</dt><dd>FOB Chennai or Krishnapatnam Port. Chennai Port is 70 km away.</dd>
               <dt>Coordinates</dt><dd>13.643284, 80.014568</dd>
             </dl>
-            <a className="btn ghost dk" href="https://www.google.com/maps?q=13.643222,80.016667" target="_blank" rel="noreferrer">Open factory location</a>
+            <a className="btn" href="https://www.google.com/maps?q=13.643222,80.016667" target="_blank" rel="noreferrer">Open factory location</a>
           </aside>
         </section>
       </main>

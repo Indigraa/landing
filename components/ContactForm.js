@@ -19,7 +19,7 @@ export default function ContactForm() {
       form.reset();
       setState({ status: "ok", message: "Enquiry sent. We will reply by email or WhatsApp." });
     } catch (err) {
-      setState({ status: "error", message: `${err.message} You can also email Indigraa@gmail.com directly.` });
+      setState({ status: "error", message: `${err.message} You can also email enquire@indigraglobal.com directly.` });
     }
   }
 
