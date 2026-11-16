@@ -9,6 +9,9 @@ On Vercel, add GMAIL_USER and GMAIL_APP_PASSWORD under Project Settings > Enviro
 
 
 cd /home/ec2-user/landing
+git fetch
+git pull
+
 npm install
 npm run build
 
