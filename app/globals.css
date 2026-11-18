@@ -89,3 +89,6 @@ dt{font-size:.8rem;color:#9d927f;margin-top:.9rem}dd{margin:0}aside a{color:#f1e
 .lb-x:hover,.lb-nav:hover{border-color:var(--gold);color:var(--gold)}
 .lb-cap{position:absolute;bottom:1rem;left:1rem;right:1rem;margin:0;text-align:center;color:#cfc4b0;font-size:.95rem}
 @media(prefers-reduced-motion:reduce){.lb img{transition:none}}
+
+.two figure:nth-child(1) img{width:100%;height:auto;aspect-ratio:1920/1090}
+.two figure:nth-child(2) img{width:100%;height:auto;aspect-ratio:1000/1204}
