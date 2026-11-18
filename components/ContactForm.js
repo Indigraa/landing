@@ -31,7 +31,7 @@ export default function ContactForm() {
       <label>Phone / WhatsApp<input name="phone" maxLength={30} autoComplete="tel" /></label>
       <label className="wide">I am interested in
         <select name="interest" defaultValue="Headstones">
-          {["Headstones", "Sculptures", "Benches", "Slants", "Vases", "Large specials (war memorials, mausoleums)", "IG Black blocks / slabs", "Imported colours", "Other"].map((o) => <option key={o}>{o}</option>)}
+          {["Headstones", "Sculptures", "Benches", "Slants", "Vases", "Large specials (war memorials, mausoleums)", "Premium Black blocks / slabs", "Imported colours", "Other"].map((o) => <option key={o}>{o}</option>)}
         </select>
       </label>
       <label className="wide">Message

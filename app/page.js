@@ -44,10 +44,9 @@ export default function Home() {
       <main id="top">
         <section className="hero">
           <div className="hero-copy">
-            <h1>Granite memorials, cut and polished at the source.</h1>
+            <h1>Crafting memories in Stone, where Quality meets Tradition</h1>
             <p>
-              Headstones, sculptures, benches and monuments from a 100% export-oriented factory in Tada, 70 km
-              from Chennai Port. Twenty Six years of making, now with our own black granite quarry.
+              Headstones, sculptures, benches and monuments from a 100% export-oriented factory in Chennai, India. Twenty Six years of making, now with our own premium black granite quarry.
             </p>
             <div className="cta">
               <a className="btn" href="#contact">Request prices</a>
@@ -59,10 +58,10 @@ export default function Home() {
 
         <section id="quarry" className="sec dark">
           <div className="narrow">
-            <h2>We own the quarry behind IG Black.</h2>
+            <h2>We own the quarry behind Premium Black.</h2>
             <p>
-              IG Black is our own close-grained, deep black granite, selected for American monuments. Because the
-              blocks come from our quarry and go straight to our factory and into your container, there is no
+              Premium Black is our own close-grained, deep black granite, selected for American monuments. Because the
+              blocks come from our own quarry and go straight to our factory and into your container, there is no
               middleman in the price and no gap in supply.
             </p>
           </div>
@@ -72,7 +71,7 @@ export default function Home() {
             <li><b>Steady supply</b>Our own blocks are always in stock, so production does not stop.</li>
             <li><b>Quarry owner and factory</b>Not a trader. A permanent company.</li>
           </ul>
-          <div className="strip">{quarry.map((q) => <img key={q} src={img(q)} alt="IG Black granite blocks at our quarry" loading="lazy" />)}</div>
+          <div className="strip">{quarry.map((q) => <img key={q} src={img(q)} alt="Premium Black granite blocks at our quarry" loading="lazy" />)}</div>
         </section>
         <MarketTiles />
         <section id="headstones" className="sec">

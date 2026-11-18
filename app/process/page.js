@@ -2,11 +2,11 @@ import Nav from "../../components/Nav";
 
 export const metadata = {
   title: "How we make your monument | Indigra Global Enterprises",
-  description: "From our own IG Black quarry to the factory, polishing, carving and export packing in wooden crates.",
+  description: "From our own Premium Black quarry to the factory, polishing, carving and export packing in wooden crates.",
 };
 
 const steps = [
-  ["quarry1", "Choosing and marking the block", "Our own quarry gives us first pick. We mark each block of IG Black where it will be cut, selecting only close-grained, deep black stone for monuments.", ["Own quarry, no middleman", "Only the best blocks are chosen for monument work"]],
+  ["quarry1", "Choosing and marking the block", "Our own quarry gives us first pick. We mark each block of Premium Black where it will be cut, selecting only close-grained, deep black stone for monuments.", ["Own quarry, no middleman", "Only the best blocks are chosen for monument work"]],
   ["quarry2", "Cutting blocks at the quarry", "Blocks are cut to size at the quarry and stacked in our quarry yard, ready to move to the factory.", ["Freshly cut blocks ready for the factory", "Full stock, so production never waits for material"]],
   ["block-cutting", "Sawing blocks to size", "A large circular saw, cooled with a constant flow of water, cuts the rough granite block into the sizes needed for slabs and monument parts.", ["Water-cooled cutting for a clean, accurate cut", "Blocks are cut to the sizes marked for each monument"]],
   ["factory2", "Heavy handling in the factory", "At the factory, our EOT crane lifts blocks and heavy slabs safely onto the cutting and polishing lines. Imported rough blocks from Norway, South Africa and Finland are handled the same way.", ["Overhead crane for large monuments", "Imported colours made in the same factory"]],
